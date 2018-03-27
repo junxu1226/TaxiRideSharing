@@ -27,10 +27,11 @@ class Taxi:
         self.capacity = capacity
         self.curr_loc = initial_loc
         self.capacity_remain = capacity
-    in_pickup = False
+    is_pickup = False
+    time_remain = -1
     req_list = []
     route = []
-    time_remain = -1
+    dest_set = set()
 
 
 class Area:
